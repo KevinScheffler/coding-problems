@@ -56,3 +56,20 @@ function confirmEnding(str, target) {
 // console.log(confirmEnding("Bastian", "n"));
 // console.log(confirmEnding("Connor", "n"));
 console.log(confirmEnding("He has to give me a new name", "name"));
+
+
+// REPEAT A STRING
+
+function repeatStringNumTimes(str, num) {
+    let repeated = '';
+    if (num < 0) {
+      return '';
+    } else {
+    for (let i = 0; i < num; i++) {
+      repeated += str;
+    }
+  }
+    return repeated;
+  }
+
+  repeatStringNumTimes("abc", 3)
