@@ -55,7 +55,7 @@ function confirmEnding(str, target) {
 
 // console.log(confirmEnding("Bastian", "n"));
 // console.log(confirmEnding("Connor", "n"));
-console.log(confirmEnding("He has to give me a new name", "name"));
+// console.log(confirmEnding("He has to give me a new name", "name"));
 
 
 // REPEAT A STRING
@@ -72,4 +72,18 @@ function repeatStringNumTimes(str, num) {
     return repeated;
   }
 
-  repeatStringNumTimes("abc", 3)
+//   repeatStringNumTimes("abc", 3)
+
+
+// TRUNCATE A STRING
+function truncateString(str, num) {
+    let truncated = str.slice(0, num);
+    if (str.length > num) {
+        return truncated + '...';
+    } else {
+        return str;
+    }
+}
+
+// console.log(truncateString("A-tisket a-tasket A green and yellow basket", 8));
+// console.log(truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length))
