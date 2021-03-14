@@ -117,3 +117,19 @@ function booWho(bool) {
 }
 
 // console.log(booWho(null));
+
+
+
+// TITLE CASE A SENTENCE
+function titleCase(str) {
+    var convertToArray = str.toLowerCase().split(" ");
+    var result = convertToArray.map(function(val) {
+        return val.replace(val.charAt(0), val.charAt(0).toUpperCase());
+    });
+    return result.join(' ');
+}
+
+
+
+
+console.log(titleCase("I'm a little tea pot"));
