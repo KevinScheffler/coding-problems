@@ -147,4 +147,15 @@ function frankenSplice(arr1, arr2, n) {
 }
 
 
-console.log(frankenSplice([1, 2, 3], [4, 5, 6], 1));
+// console.log(frankenSplice([1, 2, 3], [4, 5, 6], 1));
+
+
+// MERGE TWO SORTED ARRAYS INTO ONE
+
+function mergeArrays(a, b) {
+    return [...new Set(a.concat(b))].sort((a,b)=>a-b);
+}
+
+// mergeArrays([1,2,3,4], [5,6,7,8]);
+// mergeArrays([1,3,5,7,9], [10,8,6,4,2]);
+console.log(mergeArrays([1,3,5,7,9,11,12], [1,2,3,4,5,10,12]));
