@@ -158,4 +158,15 @@ function mergeArrays(a, b) {
 
 // mergeArrays([1,2,3,4], [5,6,7,8]);
 // mergeArrays([1,3,5,7,9], [10,8,6,4,2]);
-console.log(mergeArrays([1,3,5,7,9,11,12], [1,2,3,4,5,10,12]));
+// console.log(mergeArrays([1,3,5,7,9,11,12], [1,2,3,4,5,10,12]));
+
+// Sum Mixed Array
+function sumMix(x){
+    let sum = 0;
+    for (let i = 0; i < x.length; i++) {
+      sum += Number(x[i]);
+    }
+    return sum;
+  }
+
+  console.log(sumMix([9, 3, '7', '3'])
