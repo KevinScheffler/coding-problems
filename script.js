@@ -194,4 +194,13 @@ var array1 = [true,  true,  true,  false,
     true,  true,  true,  true ,
     false, false, true,  true ];
 
-    console.log(countSheeps(array1));
+    // console.log(countSheeps(array1));
+
+
+// Wide Mouthed Frog
+function mouthSize(animal) {
+    animal = animal.toLowerCase();
+    return animal === 'alligator' ? 'small' : 'wide';
+}
+
+console.log(mouthSize('alligator'));
