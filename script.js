@@ -252,6 +252,8 @@ function generateRange(min, max, step) {
 
 // console.log(generateRange(2, 10, 2));
 
+
+// FRANKENSPLICE
 function frankenSplice(arr1, arr2, n) {
     let localArray = arr2.slice();
     for (let i = 0; i < arr1.length; i++) {
@@ -261,4 +263,17 @@ function frankenSplice(arr1, arr2, n) {
     return localArray;
 }
 
-console.log(frankenSplice([1, 2, 3], [4, 5, 6], 1));
+// console.log(frankenSplice([1, 2, 3], [4, 5, 6], 1));
+
+
+// FALSY BOUNCER
+function bouncer(arr) {
+    let newArray = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i]) newArray.push(arr[i]);
+        }
+        return newArray;
+    }
+
+
+console.log(bouncer([7, "ate", "", false, 9]));
