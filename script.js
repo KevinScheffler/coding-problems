@@ -276,4 +276,16 @@ function bouncer(arr) {
     }
 
 
-console.log(bouncer([7, "ate", "", false, 9]));
+// console.log(bouncer([7, "ate", "", false, 9]));
+
+
+
+// KEEP UP THE HOOP
+function hoopCount (n) {
+    return n >= 10 ? 'Great, now move on to tricks' 
+    :
+    'Keep at it until you get it'
+}
+
+console.log(hoopCount(3));
+console.log(hoopCount(11));
