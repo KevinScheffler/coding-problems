@@ -287,5 +287,14 @@ function hoopCount (n) {
     'Keep at it until you get it'
 }
 
-console.log(hoopCount(3));
-console.log(hoopCount(11));
+// console.log(hoopCount(3));
+// console.log(hoopCount(11));
+
+
+
+// RETURNING STRINGS
+function greet(name) {
+    return `Hello, ${name} how are you doing today?`;
+}
+
+console.log(greet('ryan'));
