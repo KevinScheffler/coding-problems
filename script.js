@@ -298,3 +298,13 @@ function greet(name) {
 }
 
 console.log(greet('ryan'));
+
+
+// PICK A SET OF FIRST ELEMENTS
+function first(arr, n = 1) {
+    return arr.slice(0, n);
+  }
+
+  var arr = ['a', 'b', 'c', 'd', 'e'];
+
+  console.log(first(arr, 2));
