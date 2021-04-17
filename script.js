@@ -297,7 +297,7 @@ function greet(name) {
     return `Hello, ${name} how are you doing today?`;
 }
 
-console.log(greet('ryan'));
+// console.log(greet('ryan'));
 
 
 // PICK A SET OF FIRST ELEMENTS
@@ -307,4 +307,21 @@ function first(arr, n = 1) {
 
   var arr = ['a', 'b', 'c', 'd', 'e'];
 
-  console.log(first(arr, 2));
+//   console.log(first(arr, 2));
+
+
+//CALCULATE BMI
+function bmi(weight, height) {
+    let calculateBMI = weight / height ** 2;
+    if (calculateBMI <= 18.5) {
+        return 'Underweight';
+    } else if (calculateBMI <= 25.0) {
+        return 'Normal';
+    } else if (calculateBMI <= 30.0) {
+        return 'Overweight';
+    } else if (calculateBMI > 30) {
+        return 'Obese';
+    }
+}
+
+console.log(bmi(80, 1.80));
