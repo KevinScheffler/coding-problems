@@ -324,4 +324,14 @@ function bmi(weight, height) {
     }
 }
 
-console.log(bmi(80, 1.80));
+// console.log(bmi(80, 1.80));
+
+
+// Do you speak English?
+function spEng(sentence) {
+    let sentenceLower = sentence.toLowerCase();
+    return sentenceLower.includes('english');
+}
+
+console.log(spEng('English'));
+console.log(spEng('egnlish'));
