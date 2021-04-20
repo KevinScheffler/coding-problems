@@ -333,5 +333,14 @@ function spEng(sentence) {
     return sentenceLower.includes('english');
 }
 
-console.log(spEng('English'));
-console.log(spEng('egnlish'));
+// console.log(spEng('English'));
+// console.log(spEng('egnlish'));
+
+
+// ABBREVIATE NAME
+function abbrevName(name) {
+    var nameArray = name.split(" ")
+    return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();
+}
+
+console.log(abbrevName('Kevin Scheffler'));
