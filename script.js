@@ -343,4 +343,18 @@ function abbrevName(name) {
     return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();
 }
 
-console.log(abbrevName('Kevin Scheffler'));
+// console.log(abbrevName('Kevin Scheffler'));
+
+
+// WILL YOU MAKE IT?
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+    let miles = mpg * fuelLeft;
+    if (miles >= distanceToPump) {
+        return true;
+    } else {
+        return false;
+    }
+};
+
+console.log(zeroFuel(50, 25, 2));
+console.log(zeroFuel(100, 50, 1));
