@@ -356,5 +356,17 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
     }
 };
 
-console.log(zeroFuel(50, 25, 2));
-console.log(zeroFuel(100, 50, 1));
+// console.log(zeroFuel(50, 25, 2));
+// console.log(zeroFuel(100, 50, 1));
+
+
+// String Repeat
+function repeatStr(n, s) {
+    let result = '';
+    for (let i = 0; i < n; i++) {
+        result += s;
+    }
+    return result;
+}
+
+console.log(repeatStr(3, "*"));
