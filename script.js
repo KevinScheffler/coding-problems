@@ -369,4 +369,17 @@ function repeatStr(n, s) {
     return result;
 }
 
-console.log(repeatStr(3, "*"));
+// console.log(repeatStr(3, "*"));
+
+
+// AREA OF A PERIMETER
+const areaOrPerimeter = function(l , w) {
+    if (l === w) {
+      return l * w;
+    } else {
+      return (l + w) * 2;
+    }
+  };
+
+  console.log(areaOrPerimeter(4, 4));
+  console.log(areaOrPerimeter(10, 6));
