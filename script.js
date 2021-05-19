@@ -397,4 +397,18 @@ function removeExclamationMarks(s) {
     return newString;
 }
 
-console.log(removeExclamationMarks('Hello World!'));
+// console.log(removeExclamationMarks('Hello World!'));
+
+
+// Find the first non-consecutive number
+function firstNonConsecutive(arr) {
+    let newArr = [];
+    for (let i = 0; i < arr.length - 1; ++i) {
+        if (arr[i] + 1 !== arr[i + 1]) {
+            return arr[i + 1];
+        }
+    }
+    return null;
+}
+
+console.log(firstNonConsecutive([1,2,3,4,5,6,7,8]));
