@@ -402,7 +402,6 @@ function removeExclamationMarks(s) {
 
 // Find the first non-consecutive number
 function firstNonConsecutive(arr) {
-    let newArr = [];
     for (let i = 0; i < arr.length - 1; ++i) {
         if (arr[i] + 1 !== arr[i + 1]) {
             return arr[i + 1];
@@ -411,4 +410,13 @@ function firstNonConsecutive(arr) {
     return null;
 }
 
-console.log(firstNonConsecutive([1,2,3,4,5,6,7,8]));
+// console.log(firstNonConsecutive([1,2,3,4,5,6,7,8]));
+
+
+// Sum Of Strings
+function sumStr(a,b) {
+    return String(Number(a)+Number(b));
+}
+
+console.log(sumStr(4,"5"));
+console.log(sumStr("34","5"));
