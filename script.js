@@ -435,7 +435,15 @@ function lovefunc(flower1, flower2) {
     }
 }
 
-console.log(lovefunc(1,4));
-console.log(lovefunc(2,2));
-console.log(lovefunc(0,1));
-console.log(lovefunc(0,0));
+// console.log(lovefunc(1,4));
+// console.log(lovefunc(2,2));
+// console.log(lovefunc(0,1));
+// console.log(lovefunc(0,0));
+
+
+
+// GravityFlip
+const flip = (d, a) => a.sort((x, y) => d === 'R' ? x - y : y - x);
+
+console.log(flip('R', [3, 2, 1, 2]), [1, 2, 2, 3]);
+console.log(flip('L', [1, 4, 5, 3, 5]), [5, 5, 4, 3, 1]);
