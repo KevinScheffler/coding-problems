@@ -445,5 +445,26 @@ function lovefunc(flower1, flower2) {
 // GravityFlip
 const flip = (d, a) => a.sort((x, y) => d === 'R' ? x - y : y - x);
 
-console.log(flip('R', [3, 2, 1, 2]), [1, 2, 2, 3]);
-console.log(flip('L', [1, 4, 5, 3, 5]), [5, 5, 4, 3, 1]);
+// console.log(flip('R', [3, 2, 1, 2]), [1, 2, 2, 3]);
+// console.log(flip('L', [1, 4, 5, 3, 5]), [5, 5, 4, 3, 1]);
+
+
+
+
+
+// Powers of 2
+function powersOfTwo(n) {
+    let powers = [];
+    for (let i = 0; i <= n; i++) {
+        powers.push(Math.pow(2, i));
+        
+    }
+    return powers;
+}
+
+console.log(powersOfTwo(0));
+console.log(powersOfTwo(1));
+console.log(powersOfTwo(4));
+
+
+
