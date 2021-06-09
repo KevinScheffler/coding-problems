@@ -462,9 +462,27 @@ function powersOfTwo(n) {
     return powers;
 }
 
-console.log(powersOfTwo(0));
-console.log(powersOfTwo(1));
-console.log(powersOfTwo(4));
+// console.log(powersOfTwo(0));
+// console.log(powersOfTwo(1));
+// console.log(powersOfTwo(4));
 
+
+// Calculate average
+function find_average(array) {
+    if (array.length === 0) {
+        return 0;
+    }
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        sum += array[i];
+    }
+    let average = sum / array.length;
+    return average;
+}
+
+
+console.log(find_average([1,1,1]));
+console.log(find_average([1,2,3]));
+console.log(find_average([1,2,3,4]));
 
 
