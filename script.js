@@ -481,8 +481,18 @@ function find_average(array) {
 }
 
 
-console.log(find_average([1,1,1]));
-console.log(find_average([1,2,3]));
-console.log(find_average([1,2,3,4]));
+// console.log(find_average([1,1,1]));
+// console.log(find_average([1,2,3]));
+// console.log(find_average([1,2,3,4]));
 
+// Grasshopper if/else syntax debug
+function checkAlive (health) {
+    if (health <= 0) {
+        return false;
+    } else {
+        return true;
+    }
+}
+console.log(checkAlive(5));
+console.log(checkAlive(0));
 
