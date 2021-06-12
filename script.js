@@ -493,6 +493,21 @@ function checkAlive (health) {
         return true;
     }
 }
-console.log(checkAlive(5));
-console.log(checkAlive(0));
+// console.log(checkAlive(5));
+// console.log(checkAlive(0));
 
+
+// Thinkful-Logic Drills: Traffic light
+function updateLight(current) {
+    if (current === 'green') {
+        return 'yellow';
+    } else if (current === 'yellow') {
+        return 'red';
+    } else if (current === 'red') {
+        return 'green'
+    }
+}
+
+console.log(updateLight('green'));
+console.log(updateLight('yellow'));
+console.log(updateLight('red'));
