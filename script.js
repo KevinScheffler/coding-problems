@@ -504,10 +504,26 @@ function updateLight(current) {
     } else if (current === 'yellow') {
         return 'red';
     } else if (current === 'red') {
-        return 'green'
+        return 'greet';
     }
 }
 
-console.log(updateLight('green'));
-console.log(updateLight('yellow'));
-console.log(updateLight('red'));
+// console.log(updateLight('green'));
+// console.log(updateLight('yellow'));
+// console.log(updateLight('red'));
+
+
+
+
+// What's the real floor?
+function getRealFloor(n) {
+    if (n === 15) {
+        return n - 2;
+    } else {
+        return n - 1;
+    }
+}
+
+console.log(getRealFloor(1));
+console.log(getRealFloor(5));
+console.log(getRealFloor(15));
