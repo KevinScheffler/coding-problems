@@ -517,13 +517,12 @@ function updateLight(current) {
 
 // What's the real floor?
 function getRealFloor(n) {
-    if (n === 15) {
-        return n - 2;
-    } else {
-        return n - 1;
-    }
+    return n > 13 ? n - 2 : n > 0 ? n - 1 : n;
 }
 
 console.log(getRealFloor(1));
 console.log(getRealFloor(5));
 console.log(getRealFloor(15));
+console.log(getRealFloor(196));
+console.log(getRealFloor(165));
+console.log(getRealFloor(231));
