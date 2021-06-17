@@ -520,9 +520,17 @@ function getRealFloor(n) {
     return n > 13 ? n - 2 : n > 0 ? n - 1 : n;
 }
 
-console.log(getRealFloor(1));
-console.log(getRealFloor(5));
-console.log(getRealFloor(15));
-console.log(getRealFloor(196));
-console.log(getRealFloor(165));
-console.log(getRealFloor(231));
+// console.log(getRealFloor(1));
+// console.log(getRealFloor(5));
+// console.log(getRealFloor(15));
+// console.log(getRealFloor(196));
+// console.log(getRealFloor(165));
+// console.log(getRealFloor(231));
+
+
+// Falsy Bouncer
+function bouncer(arr) {
+    return arr.filter(value => value);
+}
+
+console.log(bouncer([7, "ate", "", false, 9]));
