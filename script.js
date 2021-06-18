@@ -533,4 +533,12 @@ function bouncer(arr) {
     return arr.filter(value => value);
 }
 
-console.log(bouncer([7, "ate", "", false, 9]));
+// console.log(bouncer([7, "ate", "", false, 9]));
+
+// Sum of Strings
+function sumStr(a,b) {
+    let num = Number(a) + Number(b);
+    return num.toString();
+}
+
+console.log(sumStr("4", "5"));
