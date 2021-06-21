@@ -541,4 +541,15 @@ function sumStr(a,b) {
     return num.toString();
 }
 
-console.log(sumStr("4", "5"));
+// console.log(sumStr("4", "5"));
+
+
+// Compare Within Margin
+function closeCompare(a, b, margin = 0) {
+  if (a < b - margin) return -1;
+  if (a - margin > b) return 1;
+  return 0;
+}
+
+console.log(closeCompare(4, 5));
+console.log(closeCompare(2, 5, 3));
