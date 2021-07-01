@@ -551,5 +551,18 @@ function closeCompare(a, b, margin = 0) {
   return 0;
 }
 
-console.log(closeCompare(4, 5));
-console.log(closeCompare(2, 5, 3));
+// console.log(closeCompare(4, 5));
+// console.log(closeCompare(2, 5, 3));
+
+
+// Square(n)Sum
+function squareSum(numbers) {
+    let sum = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        sum += numbers[i] ** 2;
+    }
+    return sum;
+}
+
+console.log(squareSum([1, 2]));
+console.log(squareSum([0, 3, 4, 5]));
