@@ -564,5 +564,12 @@ function squareSum(numbers) {
     return sum;
 }
 
-console.log(squareSum([1, 2]));
-console.log(squareSum([0, 3, 4, 5]));
+// console.log(squareSum([1, 2]));
+// console.log(squareSum([0, 3, 4, 5]));
+
+// FIXME: Replace all dots
+var replaceDots = function(str) {
+  return str.replace(/\./g, '-');
+}
+
+console.log(replaceDots("one.two.three"));
