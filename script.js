@@ -572,4 +572,12 @@ var replaceDots = function(str) {
   return str.replace(/\./g, '-');
 }
 
-console.log(replaceDots("one.two.three"));
+// console.log(replaceDots("one.two.three"));
+
+
+
+function digitize (n) {
+  return String(n).split('').map(Number).reverse();
+}
+
+console.log(digitize(12345))
