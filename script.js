@@ -580,4 +580,15 @@ function digitize (n) {
   return String(n).split('').map(Number).reverse();
 }
 
-console.log(digitize(12345))
+// console.log(digitize(12345));
+
+// print odd numbers less than 100
+function oddLessThan100 () {
+    for (let i = 0; i < 100; i++) {
+        if (i % 2 === 1) {
+            console.log(i);
+        }
+    }
+}
+
+oddLessThan100()
