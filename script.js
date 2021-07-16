@@ -595,6 +595,13 @@ function oddLessThan100 () {
 
 
 // Print numbers from 1 - 10
-for (let i = 0; i <= 10; i++) {
-    console.log(i)
+// for (let i = 0; i <= 10; i++) {
+//     console.log(i)
+// }
+
+
+// print the multiplication table with the number 7
+for (let i = 1; i <= 10; i++) {
+    var row = "7 * " + i + " = " + 7 * i;
+    console.log(row);
 }
