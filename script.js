@@ -601,7 +601,38 @@ function oddLessThan100 () {
 
 
 // print the multiplication table with the number 7
-for (let i = 1; i <= 10; i++) {
-    var row = "7 * " + i + " = " + 7 * i;
-    console.log(row);
+// for (let i = 1; i <= 10; i++) {
+//     var row = "7 * " + i + " = " + 7 * i;
+//     console.log(row);
+// }
+
+
+
+// Find Maximum and Minimum Values of a List
+var min = function(list) {
+    let min;
+    for (let i = 0; i < list.length; i++) {
+        min = list[i];
+        if (list[i] < min) {
+            min = list[i];
+        }
+    }
+    return min;
 }
+
+console.log(min([-52, 56, 30, 29, -54, 0, -110]));
+console.log(min([42, 54, 65, 87, 0]));
+
+var max = function(list) {
+    let max;
+    for(let i = 0; i < list.length; i++) {
+        max = list[i];
+        if(max[i] > max) {
+            max = list[i];
+        }
+    }
+    return max;
+}
+
+console.log(max([4,6,2,1,9,63,-134,566]));
+console.log(max([5]));
